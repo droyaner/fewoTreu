@@ -1,3 +1,11 @@
+<?php
+if (isset($_GET["section"])) { 
+   $section = $_GET["section"]; 
+} else { 
+   $section = ""; 
+} 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,29 +27,7 @@
 </head>
 <body>
 	<!-- Navigation -->
-	<div class="main-nav">
-		<div class="container">
-			<header class="group top-nav">
-				<nav class="navbar logo-w navbar-left" >
-					<a class="logo" href="index.html">Ferienwohnung Treu</a>
-				</nav>
-				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				    <span class="logo">Ferienwohnung Treu</span>
-				</div>
-			    <nav id="navbar-1" class="navbar item-nav navbar-right">
-				    <ul>
-				        <li class="active"><a href="index.html">Startseite</a></li>
-				        <li><a href="#">Wohnung</a></li>
-				        <li><a href="#">Freizeit</a></li>
-				        <li><a href="#">Anfahrt</a></li>
-				        <li><a href="#">Preise</a></li>
-				        <li><a href="#">Buchen</a></li>
-				        <li><a href="#">Kontakt</a></li>
-				    </ul>
-				</nav>
-			</header>
-		</div>
-	</div>
+    	<?php include("menu.php")?>	
 
 	<!-- Introduction -->
 	<div class="intro">
