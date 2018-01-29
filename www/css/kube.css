@@ -105,6 +105,9 @@ h6 {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  color: #535353;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
 }
 a:active,
 a:hover {
